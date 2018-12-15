@@ -48,9 +48,13 @@ const Employee = props => ( <
 );
 
 Employee.propTypes = {
-  name: PropTypes.string,
-  age: PropTypes.number,
+  name: PropTypes.string.isReqiured,
+  age: PropTypes.number.isReqiured,
   position: PropTypes.string
+}
+
+Employee.defaultProps = {
+  position: "employee"
 }
 
 ReactDOM.render( <
