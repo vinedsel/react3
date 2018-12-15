@@ -23,22 +23,37 @@ import PropTypes from 'prop-types';
 // main component
 
 const App = props => {
-  return(
-    <div>
-      <Hello name="Nikki" />
-      <Hello name="Michael" />
-      <Hello name="Andrew" />
-    </div>
+  return ( <
+    Employee name = "Elizabeth"
+    age = {
+      27
+    }
+    position = "Sales Manager" / >
   );
 };
 
-const Hello = props => (
-  <div>
-    <h1>Hello, {props.name}!</h1>
-  </div>
+const Employee = props => ( <
+  ul >
+  <
+  li > {
+    props.name
+  } < /li> <
+  li > {
+    props.age
+  } < /li> <
+  li > {
+    props.position
+  } < /li> < /
+  ul >
 );
 
-ReactDOM.render(
-  <App/>,
+Employee.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  position: PropTypes.string
+}
+
+ReactDOM.render( <
+  App / > ,
   document.getElementById('root')
 );
