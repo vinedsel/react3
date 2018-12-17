@@ -19,45 +19,67 @@ import PropTypes from 'prop-types';
 //   document.getElementById('root')
 // );
 
+//_____________________________________________________________________________
 
 // main component
 
-const App = props => {
-  return ( <
-    Employee name = "Elizabeth"
-    age = {
-      27
-    }
-    position = "Sales Manager" / >
-  );
-};
+// const App = props => {
+//   return ( <
+//     Employee name = "Elizabeth"
+//     age = {
+//       27
+//     }
+//     position = "Sales Manager" / >
+//   );
+// };
+//
+// const Employee = props => ( <
+//   ul >
+//   <
+//   li > {
+//     props.name
+//   } < /li> <
+//   li > {
+//     props.age
+//   } < /li> <
+//   li > {
+//     props.position
+//   } < /li> < /
+//   ul >
+// );
+//
+// Employee.propTypes = {
+//   name: PropTypes.string.isReqiured,
+//   age: PropTypes.number.isReqiured,
+//   position: PropTypes.string
+// }
+//
+// Employee.defaultProps = {
+//   position: "employee"
+// }
+//
+// ReactDOM.render( <
+//   App / > ,
+//   document.getElementById('root')
+// );
 
-const Employee = props => ( <
-  ul >
-  <
-  li > {
-    props.name
-  } < /li> <
-  li > {
-    props.age
-  } < /li> <
-  li > {
-    props.position
-  } < /li> < /
-  ul >
-);
+//_____________________________________________________________________________
 
-Employee.propTypes = {
-  name: PropTypes.string.isReqiured,
-  age: PropTypes.number.isReqiured,
-  position: PropTypes.string
-}
+// Rendering Data with the Map Function
 
-Employee.defaultProps = {
-  position: "employee"
-}
+// const App = props => {
+//   const items = ['Bread', 'Milk', 'Eggs', 'Tea'];
+//   return <List items={items} />;
+// };
+//
+// const List = props => {
+//   const listItems = props.items.map((item, index) => (
+//     <li key={index}>{item}</li>
+//   ));
+//   return <ul>{listItems}</ul>;
+// };
+// ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render( <
-  App / > ,
-  document.getElementById('root')
-);
+//_____________________________________________________________________________
+
+// Rendering Objects with the Map Function
